@@ -3,8 +3,6 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Nav, Navbar } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBroadcastTower } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
   return (
@@ -17,30 +15,30 @@ const NavigationBar = () => {
       variant="dark"
     >
       <Navbar.Brand>
-        <Link to="/home">
-          <FontAwesomeIcon id="logo" size="2x" icon={faBroadcastTower} />
+        <Link to={process.env.PUBLIC_URL + '/'}>
+          <img id="logo" src={require("../media/logo2.png")} alt="logo"/>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Nav className="ml-xl-3">
-            <Link className="nav-item nav-link px-3" to={"/home"}>
+            <Link className="nav-item nav-link px-3" to={process.env.PUBLIC_URL + '/'}>
               Home
             </Link>
           </Nav>
           <Nav className="ml-xl-3">
-            <Link className="nav-item nav-link px-3" to={"/projects"}>
+            <Link className="nav-item nav-link px-3" to={process.env.PUBLIC_URL + '/projects'}>
               Projects
             </Link>
           </Nav>
           <Nav className="ml-xl-3">
-            <Link className="nav-item nav-link px-3" to={"/resume"}>
+            <Link className="nav-item nav-link px-3" to={process.env.PUBLIC_URL + '/resume'}>
               Resume
             </Link>
           </Nav>
           <Nav className="ml-xl-3">
-            <Link className="nav-item nav-link px-3" to={"/about"}>
+            <Link className="nav-item nav-link px-3" to={process.env.PUBLIC_URL + '/about'}>
               About
             </Link>
           </Nav>

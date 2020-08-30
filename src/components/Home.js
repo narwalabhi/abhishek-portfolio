@@ -12,7 +12,7 @@ const Home = () => {
           I'm an Android Developer  focused
           on creating clean & user‑friendly applications with a hunger to learn more.
         </p>
-        <Link to="/projects">
+        <Link to={process.env.PUBLIC_URL + '/projects'}>
           <Button id="btnProject" variant="secondary">
             My Work
           </Button>

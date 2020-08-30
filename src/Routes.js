@@ -11,13 +11,13 @@ const Routes = () => {
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/">
-          <Redirect to="/Home" />
+        <Route exact path={process.env.PUBLIC_URL + '/home'} component={Home} />
+        <Route exact path={process.env.PUBLIC_URL + '/'}>
+          <Redirect to={process.env.PUBLIC_URL + '/home'} />
         </Route>
-        <Route exact path="/projects" component={Projects} />
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/resume" component={Resume}/>
+        <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects} />
+        <Route exact path={process.env.PUBLIC_URL + '/about'} component={About}/>
+        <Route exact path={process.env.PUBLIC_URL + '/resume'} component={Resume}/>
       </Switch>
     </div>
   );

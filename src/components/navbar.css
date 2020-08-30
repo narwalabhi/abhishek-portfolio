@@ -1,0 +1,14 @@
+#navbar{
+    padding: .5% 5%;
+}
+
+.nav-item.nav-link.px-3{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0% 3%;
+    color: white;
+}
+
+#logo{
+    color: white;
+}

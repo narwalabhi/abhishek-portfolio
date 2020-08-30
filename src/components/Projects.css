@@ -1,0 +1,57 @@
+#projects {
+  margin-top: 6%;
+}
+
+.project {
+  margin-top: 10%;
+}
+
+.page-wrap {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px;
+  background: rgba(gray, 0.2);
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-title {
+  color: whitesmoke;
+  font-size: em;
+}
+
+hr {
+  width: 4%;
+  background-color: gray;
+}
+
+.project-desc {
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin: 3% 10%;
+}
+
+.button-checkout {
+  border: solid 2px #00b0ff;
+  background: transparent;
+  color: white;
+  padding: 18px;
+  border-radius: 12%;
+  margin-bottom: 6%;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.col-img{
+    height: 600px;
+}

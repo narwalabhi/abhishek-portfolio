@@ -1,0 +1,28 @@
+#jumbo{
+    text-align: center;
+    margin-top: 13%;
+    background: transparent;
+}
+
+div{
+    height: 100%;
+}
+
+.jumbotron > h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.jumbotron > p{
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0% 10%;
+}
+
+#btnProject{
+    background: transparent;
+    border: solid 2px whitesmoke;
+    padding: 1.5%;
+    text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+h1{
+    font-size: 6rem;
+}
+
+.about-div{
+    padding: 3em 5%;
+    margin-top: 5%;
+    color: whitesmoke;
+}
+
+.intro{
+    font-size: 1.8rem;
+    margin: 5% auto;
+}
+
+.about-col{
+    height: 400px;
+}
+
+.about-img{
+    padding: 0 10% 0 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-icon{
+    padding: 0 2%;
+    color: white;
+}
+
+.about-desc{
+    margin-bottom: 5%;
+}
+
+.skills-div{
+    margin: 9% auto 7% auto;
+    padding: 0 5%;
+}
+
+#title-myskills{
+    text-align: end;
+}

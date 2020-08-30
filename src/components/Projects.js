@@ -31,21 +31,21 @@ const Projects = () => {
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/foliyoo/login.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792927/portfolioo/foliyoo/login_hbgis1.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/foliyoo/main.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792927/portfolioo/foliyoo/main_esdzli.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/foliyoo/search.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792928/portfolioo/foliyoo/search_qkfqg3.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
@@ -79,21 +79,21 @@ const Projects = () => {
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/foliyoo-driver/dashboard.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792952/portfolioo/foliyoo-driver/dashboard_ptmprv.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/foliyoo-driver/bookings.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792954/portfolioo/foliyoo-driver/bookings_z88ge2.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/foliyoo-driver/speed.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792952/portfolioo/foliyoo-driver/speed_rub4or.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
@@ -124,21 +124,21 @@ const Projects = () => {
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/PostApp/posts.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792978/portfolioo/PostApp/posts_ccz9dv.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/PostApp/post.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792975/portfolioo/PostApp/post_ft4bua.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/PostApp/profile.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792975/portfolioo/PostApp/profile_qfhdna.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
@@ -168,21 +168,21 @@ const Projects = () => {
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/whatsapp-clone/number.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792996/portfolioo/Whatsapp-Clone/number_kcxhye.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/whatsapp-clone/chat.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792995/portfolioo/Whatsapp-Clone/chat_imljrb.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>
                 <Col className="col-img" xs={6} md={4}>
                   <img
                     className="image"
-                    src={require("../media/whatsapp-clone/users.jpg")}
+                    src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598792995/portfolioo/Whatsapp-Clone/users_wbmy8p.jpg"
                     alt="Splash Screen Foliyoo"
                   />
                 </Col>

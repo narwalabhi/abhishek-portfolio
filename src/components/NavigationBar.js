@@ -16,7 +16,7 @@ const NavigationBar = () => {
     >
       <Navbar.Brand>
         <Link to={process.env.PUBLIC_URL + '/'}>
-          <img id="logo" src={require("../media/logo2.png")} alt="logo"/>
+          <img id="logo" src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598793092/portfolioo/logo2_u3gxhv.png" alt="logo"/>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

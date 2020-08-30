@@ -49,7 +49,7 @@ const About = () => {
         <Col className="about-col" xs={8} md={6}>
           <img
             className="about-img"
-            src={require("../media/about.jpg")}
+            src="https://res.cloudinary.com/dn13kq97f/image/upload/v1598793093/portfolioo/about_ismfrz.jpg"
             alt="My pic"
           ></img>
         </Col>

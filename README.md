@@ -1,72 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Abhishek Narwal — Portfolio
 
-## Github Pages Link
+A single-page personal portfolio for **Abhishek Narwal**, full-stack software engineer specializing in Java services, distributed systems, payment infrastructure, and modern web interfaces.
 
-https://narwalabhi.github.io/abhishek-portfolio/
+**Live site:** https://narwalabhi.github.io/abhishek-portfolio/
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+- React 19 and TypeScript
+- Vite 8
+- Vitest and Testing Library
+- Biome
+- Lucide icons
+- GitHub Pages via GitHub Actions
 
-### `npm start`
+The interface uses a custom dark/cyan design system with no CSS or UI framework. Portfolio content is kept separately from the components so it can be updated without editing JSX.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requirements
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Node.js 22.12 or newer
+- npm 10 or newer
 
-### `npm test`
+## Getting started
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm ci
+npm run dev
+```
 
-### `npm run build`
+The development server runs at http://localhost:5173/abhishek-portfolio/.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Commands
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```bash
+npm run dev        # Start the Vite development server
+npm run lint       # Check formatting and lint rules with Biome
+npm run lint:fix   # Apply safe Biome fixes
+npm run format     # Format files with Biome
+npm run typecheck  # Run the TypeScript compiler without emitting files
+npm test           # Run the Vitest suite once
+npm run test:watch # Run Vitest in watch mode
+npm run build      # Typecheck and create the production build in build/
+npm run preview    # Preview the production build locally
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Pushing to `master` publishes the site through GitHub Actions.
 
-### `npm run eject`
+## Content updates
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+All biography, experience, project, skill, education, and contact content lives in:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+src/data/portfolio.ts
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The downloadable résumé is stored at `public/resume.pdf`. The portrait is loaded from the existing Cloudinary URL defined in the portfolio data.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project structure
 
-## Learn More
+```text
+src/
+  components/       # Page sections and shared UI
+  data/portfolio.ts # Editable portfolio content
+  test/setup.ts     # Vitest setup
+  App.tsx           # Section composition
+  main.tsx          # React entry point
+  styles.css        # Global design system and responsive styles
+public/             # Résumé, favicon, manifest, robots, sitemap
+.github/workflows/  # CI verification and Pages deployment
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Vite is configured with:
 
-### Code Splitting
+- Base path: `/abhishek-portfolio/`
+- Output directory: `build`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`.github/workflows/deploy.yml` runs for pushes to `master`. It installs dependencies, verifies lint/types/tests, builds the site, uploads `build/` as the Pages artifact, and deploys it. The `gh-pages` branch is not used.
 
-### Analyzing the Bundle Size
+The repository's one-time Pages setting must be **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Verification
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Pull requests run linting, type checking, tests, and a production build on Node.js 24 and 26 through GitHub Actions. The deployment workflow repeats those checks before publishing from `master`.

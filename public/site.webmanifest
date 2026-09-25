@@ -1,0 +1,18 @@
+{
+  "name": "Abhishek Narwal | Full-Stack Software Engineer",
+  "short_name": "Abhishek Narwal",
+  "description": "Full-stack software engineer building distributed systems and modern web products.",
+  "start_url": "/abhishek-portfolio/",
+  "scope": "/abhishek-portfolio/",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#070b14",
+  "icons": [
+    {
+      "src": "/abhishek-portfolio/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

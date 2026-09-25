@@ -53,7 +53,7 @@ All biography, experience, project, skill, education, and contact content lives 
 src/data/portfolio.ts
 ```
 
-The downloadable résumé is stored at `public/resume.pdf`. The portrait is loaded from the existing Cloudinary URL defined in the portfolio data.
+The downloadable résumé is stored at `public/resume.pdf`. The optimized portrait is stored locally at `public/images/abhishek-narwal.jpg`. Official university and company marks in `public/images/education/` and `public/images/companies/` are used only to identify the corresponding entries.
 
 ## Project structure
 

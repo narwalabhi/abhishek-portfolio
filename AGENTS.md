@@ -24,7 +24,7 @@ Pushing to `master` deploys GitHub Pages through `.github/workflows/deploy.yml`;
 - `src/data/portfolio.ts` is the source of truth for profile, experience, projects, skills, education, and contact content. Update it instead of editing JSX copy.
 - `src/components/` contains one component per page section plus `SectionHeading`.
 - `src/styles.css` is the only stylesheet. It defines the dark/cyan theme through CSS custom properties; preserve those tokens instead of introducing new colors ad hoc.
-- `public/resume.pdf` is the published résumé. The portrait is an existing external Cloudinary URL in the data file.
+- `public/resume.pdf` is the published résumé. The optimized portrait is the local asset `public/images/abhishek-narwal.jpg`. Official university and company marks live in `public/images/education/` and `public/images/companies/` and are used only for identification; do not recolor, distort, or reuse them elsewhere.
 - `vite.config.ts` fixes the GitHub Pages base path at `/abhishek-portfolio/` and output at `build/`. Change both deployment settings together if the repository path changes.
 - SEO, Open Graph metadata, Person structured data, `site.webmanifest`, `robots.txt`, and `sitemap.xml` live outside the React app. Keep URLs and metadata in sync with `src/data/portfolio.ts`.
 - `src/App.test.tsx` is the smoke test for positioning, navigation, experience, projects, and contact links.

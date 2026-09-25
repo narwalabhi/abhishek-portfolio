@@ -17,11 +17,11 @@ export default function App() {
       <NavigationBar />
       <main id="main-content">
         <Hero />
+        <Education />
         <Impact />
         <Experience />
         <Projects />
         <Skills />
-        <Education />
         <Contact />
       </main>
       <Footer />

@@ -1,10 +1,10 @@
 const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
 export const navigation = [
+  { label: "Education", href: "#education" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
@@ -18,8 +18,7 @@ export const profile = {
   email: "anarwal500@gmail.com",
   phone: "+1 (458) 384-9472",
   phoneHref: "tel:+14583849472",
-  portrait:
-    "https://res.cloudinary.com/dn13kq97f/image/upload/v1598793093/portfolioo/about_ismfrz.jpg",
+  portrait: `${import.meta.env.BASE_URL}images/abhishek-narwal.jpg`,
   portraitAlt: "Portrait of Abhishek Narwal",
   availability: "Open to work",
   resumeUrl,
@@ -62,6 +61,11 @@ export type Experience = {
   location: string;
   highlights: readonly string[];
   technologies: readonly string[];
+  logo: string;
+  logoAlt: string;
+  logoWidth: number;
+  logoHeight: number;
+  logoSurface: "light" | "dark";
 };
 
 export const experience: readonly Experience[] = [
@@ -77,6 +81,11 @@ export const experience: readonly Experience[] = [
       "Partnered with global teams on service contracts, API standards, and broker configuration for mission-critical ticketing infrastructure.",
     ],
     technologies: ["Java", "Spring Boot", "Kafka", "AWS SQS", "Kubernetes", "Docker"],
+    logo: `${import.meta.env.BASE_URL}images/companies/ticketmaster.svg`,
+    logoAlt: "Ticketmaster logo",
+    logoWidth: 351,
+    logoHeight: 47,
+    logoSurface: "light",
   },
   {
     company: "blackNgreen",
@@ -92,6 +101,11 @@ export const experience: readonly Experience[] = [
       "Delivered a football prediction IVR game across telecom operators with billing APIs and retry logic, sustaining 99.5% uptime during peak traffic.",
     ],
     technologies: ["Java", "Spring Boot", "ActiveMQ", "Azure", "Quartz", "REST APIs"],
+    logo: `${import.meta.env.BASE_URL}images/companies/blackngreen.png`,
+    logoAlt: "blackNgreen logo",
+    logoWidth: 270,
+    logoHeight: 113,
+    logoSurface: "dark",
   },
   {
     company: "Capgemini",
@@ -104,6 +118,11 @@ export const experience: readonly Experience[] = [
       "Automated PDF ticket generation and email delivery with iText and SMTP.",
     ],
     technologies: ["Spring Boot", "Spring Cloud", "MongoDB", "React", "JWT", "iText"],
+    logo: `${import.meta.env.BASE_URL}images/companies/capgemini.png`,
+    logoAlt: "Capgemini logo",
+    logoWidth: 181,
+    logoHeight: 40,
+    logoSurface: "light",
   },
 ];
 
@@ -267,6 +286,10 @@ export const education = [
     location: "Waterloo, Ontario",
     period: "Sept 2026 – Expected Oct 2027",
     detail: "Focusing on systems design, artificial intelligence, and machine learning.",
+    logo: `${import.meta.env.BASE_URL}images/education/university-of-waterloo.png`,
+    logoAlt: "University of Waterloo logo",
+    logoWidth: 1050,
+    logoHeight: 421,
   },
   {
     degree: "B.Tech, Computer Science & Engineering",
@@ -274,6 +297,10 @@ export const education = [
     location: "India",
     period: "Aug 2017 – Jun 2021",
     detail: "CGPA: 7.12",
+    logo: `${import.meta.env.BASE_URL}images/education/lovely-professional-university.svg`,
+    logoAlt: "Lovely Professional University logo",
+    logoWidth: 246,
+    logoHeight: 151,
   },
 ] as const;
 

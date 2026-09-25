@@ -17,10 +17,23 @@ export function Experience() {
               <div className="timeline-marker" aria-hidden="true" />
               <div className="timeline-card glass-card">
                 <div className="timeline-header">
-                  <div>
-                    <p className="timeline-period">{item.period}</p>
-                    <h3>{item.role}</h3>
-                    <p className="timeline-company">{item.company}</p>
+                  <div className="timeline-heading">
+                    <span className={`company-logo-frame company-logo-frame-${item.logoSurface}`}>
+                      <img
+                        className="company-logo"
+                        src={item.logo}
+                        alt={item.logoAlt}
+                        width={item.logoWidth}
+                        height={item.logoHeight}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </span>
+                    <div>
+                      <p className="timeline-period">{item.period}</p>
+                      <h3>{item.role}</h3>
+                      <p className="timeline-company">{item.company}</p>
+                    </div>
                   </div>
                   <span className="timeline-location">{item.location}</span>
                 </div>

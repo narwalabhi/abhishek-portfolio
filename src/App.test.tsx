@@ -16,8 +16,28 @@ describe("portfolio page", () => {
     render(<App />);
 
     expect(screen.getByText("Ticketmaster / Live Nation Entertainment")).toBeInTheDocument();
+    expect(screen.getByAltText("Ticketmaster logo")).toHaveAttribute(
+      "src",
+      "/images/companies/ticketmaster.svg",
+    );
+    expect(screen.getByAltText("blackNgreen logo")).toHaveAttribute(
+      "src",
+      "/images/companies/blackngreen.png",
+    );
+    expect(screen.getByAltText("Capgemini logo")).toHaveAttribute(
+      "src",
+      "/images/companies/capgemini.png",
+    );
     expect(screen.getByText("AI Voicemail Assistant")).toBeInTheDocument();
     expect(screen.getByText(/University of Waterloo/)).toBeInTheDocument();
+    expect(screen.getByAltText("University of Waterloo logo")).toHaveAttribute(
+      "src",
+      "/images/education/university-of-waterloo.png",
+    );
+    expect(screen.getByAltText("Lovely Professional University logo")).toHaveAttribute(
+      "src",
+      "/images/education/lovely-professional-university.svg",
+    );
     expect(screen.getByRole("link", { name: /anarwal500@gmail.com/i })).toHaveAttribute(
       "href",
       "mailto:anarwal500@gmail.com",

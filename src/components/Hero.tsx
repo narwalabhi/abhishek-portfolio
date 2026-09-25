@@ -49,8 +49,8 @@ export function Hero() {
             <img
               src={profile.portrait}
               alt={profile.portraitAlt}
-              width="720"
-              height="960"
+              width="1200"
+              height="1600"
               loading="eager"
               decoding="async"
               fetchPriority="high"

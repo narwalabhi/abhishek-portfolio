@@ -1,4 +1,4 @@
-import { Award, GraduationCap } from "lucide-react";
+import { Award } from "lucide-react";
 import { certifications, education } from "../data/portfolio";
 import { SectionHeading } from "./SectionHeading";
 
@@ -15,8 +15,16 @@ export function Education() {
           <div className="education-list">
             {education.map((item) => (
               <article className="education-card glass-card" key={item.degree}>
-                <span className="education-icon" aria-hidden="true">
-                  <GraduationCap />
+                <span className="education-logo-frame">
+                  <img
+                    className="education-logo"
+                    src={item.logo}
+                    alt={item.logoAlt}
+                    width={item.logoWidth}
+                    height={item.logoHeight}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </span>
                 <div>
                   <p className="education-period">{item.period}</p>

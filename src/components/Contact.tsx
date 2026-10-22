@@ -62,7 +62,7 @@ export function Contact() {
 
           <a className="button button-primary contact-resume" href={profile.resumeUrl} download>
             <Download aria-hidden="true" />
-            Download résumé
+            Download resume
           </a>
         </div>
       </div>

@@ -42,7 +42,7 @@ describe("portfolio page", () => {
       "href",
       "mailto:anarwal500@gmail.com",
     );
-    expect(screen.getAllByRole("link", { name: /Download résumé/i })[0]).toHaveAttribute(
+    expect(screen.getAllByRole("link", { name: /Download resume/i })[0]).toHaveAttribute(
       "download",
       "",
     );

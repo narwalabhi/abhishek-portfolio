@@ -53,7 +53,7 @@ All biography, experience, project, skill, education, and contact content lives 
 src/data/portfolio.ts
 ```
 
-The downloadable résumé is stored at `public/resume.pdf`. The optimized portrait is stored locally at `public/images/abhishek-narwal.jpg`. Official university and company marks in `public/images/education/` and `public/images/companies/` are used only to identify the corresponding entries.
+The downloadable resume is stored at `public/resume.pdf`. The optimized portrait is stored locally at `public/images/abhishek-narwal.jpg`. Official university and company marks in `public/images/education/` and `public/images/companies/` are used only to identify the corresponding entries.
 
 ## Project structure
 
@@ -65,7 +65,7 @@ src/
   App.tsx           # Section composition
   main.tsx          # React entry point
   styles.css        # Global design system and responsive styles
-public/             # Résumé, favicon, manifest, robots, sitemap
+public/             # resume, favicon, manifest, robots, sitemap
 .github/workflows/  # CI verification and Pages deployment
 ```
 

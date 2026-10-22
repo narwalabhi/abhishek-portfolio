@@ -241,15 +241,6 @@ export const earlierProjects: readonly Project[] = [
     technologies: ["Android", "Firebase"],
     links: [{ label: "GitHub", href: "https://github.com/narwalabhi/PostApp" }],
   },
-  {
-    name: "WhatsApp Clone",
-    category: "Android",
-    description:
-      "A real-time messaging application demonstrating authentication, conversations, and Firebase-backed updates.",
-    highlights: ["Realtime messaging", "Firebase authentication"],
-    technologies: ["Android", "Firebase"],
-    links: [{ label: "GitHub", href: "https://github.com/narwalabhi/Whtssapp-clone" }],
-  },
 ];
 
 export const skillGroups = [

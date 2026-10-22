@@ -25,7 +25,7 @@ export function Hero() {
             </a>
             <a className="button button-secondary" href={profile.resumeUrl} download>
               <Download aria-hidden="true" />
-              Download résumé
+              Download resume
             </a>
           </div>
 
